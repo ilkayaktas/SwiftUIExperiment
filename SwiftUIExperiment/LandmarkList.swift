@@ -9,11 +9,22 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @State var showFavoritesOnly = true // when the State object is updated, the view is redrawn
+    @EnvironmentObject var userData: UserData
+
+
     var body: some View {
         NavigationView{
-            List(landmarkData) { landmark in
-                NavigationLink(destination: LandscapeDetail(landmark: landmark)){
-                    LandmarkRow(landmark: landmark)
+            List {
+                Toggle(isOn: $userData.showFavoritesOnly){ // use the $ prefix to access a binding to a state variable, or one of its properties.
+                    Text("Favorites only")
+                }
+                ForEach(userData.landmarks) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(destination: LandscapeDetail(landmark: landmark)){
+                            LandmarkRow(landmark: landmark)
+                        }
+                    }
                 }
             }
             .navigationBarTitle(Text("Landmarks"))

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9875D48E2355C24A0009FDF3 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9875D48D2355C24A0009FDF3 /* charleyrivers.jpg */; };
+		9875D4902355C2930009FDF3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9875D48F2355C2930009FDF3 /* UserData.swift */; };
 		98B593C1234D18000045C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B593C0234D18000045C8EE /* AppDelegate.swift */; };
 		98B593C3234D18000045C8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B593C2234D18000045C8EE /* SceneDelegate.swift */; };
 		98B593C7234D18010045C8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B593C6234D18010045C8EE /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9875D48D2355C24A0009FDF3 /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
+		9875D48F2355C2930009FDF3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		98B593BD234D18000045C8EE /* SwiftUIExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B593C0234D18000045C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98B593C2234D18000045C8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				98ED98E02355162800A30D2F /* LandmarkRow.swift */,
 				98ED98DE23550E1D00A30D2F /* MapView.swift */,
 				98ED9901235518DF00A30D2F /* LandmarkList.swift */,
+				9875D48F2355C2930009FDF3 /* UserData.swift */,
 			);
 			path = SwiftUIExperiment;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 		98ED98E62355176500A30D2F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9875D48D2355C24A0009FDF3 /* charleyrivers.jpg */,
 				98ED98E72355176500A30D2F /* turtlerock.jpg */,
 				98ED98E82355176500A30D2F /* silversalmoncreek.jpg */,
 				98ED98E92355176500A30D2F /* icybay.jpg */,
@@ -205,6 +211,7 @@
 				98B593CD234D18010045C8EE /* LaunchScreen.storyboard in Resources */,
 				98ED98FA2355176500A30D2F /* umbagog.jpg in Resources */,
 				98ED98FE2355176500A30D2F /* stmarylake.jpg in Resources */,
+				9875D48E2355C24A0009FDF3 /* charleyrivers.jpg in Resources */,
 				98ED98FC2355176500A30D2F /* chincoteague.jpg in Resources */,
 				98B593CA234D18010045C8EE /* Preview Assets.xcassets in Resources */,
 				98ED98F62355176500A30D2F /* icybay.jpg in Resources */,
@@ -232,6 +239,7 @@
 				98ED98DF23550E1D00A30D2F /* MapView.swift in Sources */,
 				98ED98DD2355033000A30D2F /* LandscapeDetail.swift in Sources */,
 				98B593C3234D18000045C8EE /* SceneDelegate.swift in Sources */,
+				9875D4902355C2930009FDF3 /* UserData.swift in Sources */,
 				98ED98E52355170B00A30D2F /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
