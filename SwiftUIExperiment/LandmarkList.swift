@@ -14,7 +14,6 @@ struct LandmarkList: View {
 
 
     var body: some View {
-        NavigationView{
             List {
                 Toggle(isOn: $userData.showFavoritesOnly){ // use the $ prefix to access a binding to a state variable, or one of its properties.
                     Text("Favorites only")
@@ -28,13 +27,14 @@ struct LandmarkList: View {
                 }
             }
             .navigationBarTitle(Text("Landmarks"))
-        }
     }
 }
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+        NavigationView {
+            LandmarkList()
+                .environmentObject(UserData())
+        }
     }
 }
